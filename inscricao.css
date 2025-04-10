@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+.pagina{
+    background-color: #2135A6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0% 5%;
+}
+
+.escuro{
+    background-color: #0A1A2F;
+    color: #F0F4F8;
+}
+
+.titulo{
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 120%;
+    text-align: center;
+}
+
+.metade{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+}
+
+.ilustracao{
+    width: 60%;
+}
+
+.logo{
+    width: 50%;
+    align-items: center;
+}
+
+.conteiner{
+    overflow-x: hidden;
+    background-color: #ffffff;
+    border-radius: 15% 2% 2% 3%;
+    border: 0.2rem solid #ffffff;
+    padding: 2%;
+    margin: 5%;
+    max-width: 100%;
+    width: 90%;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 10px #777574;
+    overflow-y: scroll;
+    max-height: 80vh;
+    position: relative;
+}
+
+.conteiner_escuro{
+    background-color: #364355;
+    color: #F0F4F8;
+    border: 0.2rem solid #9fd4ff;
+}
+
+.botaoModoEscuro{
+    /* 
+    box-sizing: border-box;    
+    display: flex;
+    justify-content: end; */
+    overflow-x: hidden;
+    padding: 0.75%;
+    border: none;
+    border-radius: 30px;
+    background-color: #9fd4ff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 0.75rem;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+}
+
+.botaoVoltar {
+    margin-left: 4vh;
+    width: 12vh;
+    gap: 10px;
+    display: flex;
+    align-items: center ;
+    padding: 1% 1% 1% 1%;
+   }
+
+.botaoVoltar_parte {
+    text-decoration: none;
+    color: #8F8881;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    display: flex;
+    gap: 10%;
+    width: 50%;
+}
+
+.forms{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    position: relative; 
+}
+
+.forms i{
+    cursor: pointer;
+    font-size: 1rem;
+    position: absolute;
+    right: 5%;
+    bottom: 12%;
+    color: #57534E;
+    display: flex;
+    align-items: center;
+}
+
+.docs{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    border: 3px dashed #c7c3c0;
+    /* background-color: #ffffff; */
+    /* background-image: url(./assets/nuvem.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 8vh; */
+    width: 70%;
+    position: relative;
+}
+
+.documentos{
+    opacity: 0%;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    position: absolute;
+}
+
+.docs_conteudo{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin: 10% 5%;
+    text-align: center;
+    color: #c7c3c0;
+    
+}
+
+.label{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 120%;
+    align-items: left;
+}
+
+.inputs{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5vh;
+    margin: 2%;
+}
+
+.input{
+    background-color: white;
+    padding: 1vh;
+    width: 40vh;
+    border: 10px hidden;
+    border-radius: 16px;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+    /* margin: 10px 0px; */
+    outline: none;
+}
+
+.input:focus{
+    border: 1px solid #F3541C;
+}
+
+.input:hover{
+    background-color: #E7E5E4;
+}
+
+.selecao {
+    background-color: white;
+    padding: 1vh;
+    width: 40vh;
+    border: 10px hidden;
+    border-radius: 16px;
+    outline: none;
+}
+
+.icones {
+    box-sizing: border-box;
+    max-width: 120%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    /* background-color: white; */
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.85rem;
+    font-weight: bold;
+    line-height: 120%;
+    width: 80%;
+    gap: 3rem;
+}
+
+.icones_imagem{
+    width: 20%;
+    margin: 5%;
+}
+
+.icones_coluna{
+    display: flex;
+    flex-direction: column;
+}
+
+.icones_opcao{
+    box-sizing: border-box;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: 120%;
+    height: 6rem;
+    border: 2px solid #D6D3D1;
+    margin: 5%;
+    text-align: center;
+}
+
+.icones_opcao_escuro{
+    background-color: #566985;
+}
+
+.icones_opcao:hover{
+    border: 3px solid #F3541C;
+}
+
+.icones_trilha{
+    margin: 5%;
+}
+
+.termo{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    line-height: 120%;
+}
+
+.termo_destacado {
+    color: #E43A12;
+}
+
+.trilhas{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    line-height: 120%;
+    gap: 5vh;
+    
+}
+
+.selecao {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+}
+
+/* .botaoEnviar{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 120%;
+    background-color: #2135A6;
+    padding: 20% 20% 20% 80%;
+    border-radius: 15%;
+    color: #ffffff;
+    background-image: url(./assets/verificado.png);
+    background-repeat: no-repeat;
+    background-position: 15%;
+} */
+
+.enviar{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    width: 80%;
+} 
+
+.botaoEnviar {
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    padding: 10px;
+    background-color: #2135A6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.botaoEnviar:hover{
+    background-color: #4d5bad
+}
+
+@media screen and (max-width: 800px){
+    .pagina{
+        flex-direction: column;
+        margin: 15% 0% 5% 0%;
+    }
+    .conteiner{
+        padding: 5%;
+    }
+    .docs{ 
+        width: 90%;
+        height: 50%;
+    }
+    .icones__opcao{
+        padding: 10%;
+    }
+    .botaoVoltar {
+        margin: 0%;
+        width: 30%;
+        gap: 2%;
+        padding: 1%;
+       }
+    .botaoModoEscuro{
+        font-size: 1rem;
+        padding: 1.5%;
+        position: absolute;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 100px){
+    
+}
+

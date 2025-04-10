@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trilhas</title>
+    <link rel="stylesheet" href="inicial.css">
+    <script src="inscricao.js" defer></script>
+</head>
+<body class="pagina">
+    <header class="cabecalho">
+        <img class="logo" src="./assets/logoTrilhas.png" alt="Trilhas Inova">
+    </header>
+    <main class="conteudo">
+        <!-- <section class="conteudo_texto"> -->
+            <h2 class="conteudo_titulo">Projeto Trilhas</h2>
+            <div class="conteiner">
+                <h3>Faça seu login</h3>
+                <form action="">
+                    <div>
+                        <label class="label_login" for="nome">ID</label>
+                        <input class="input_login" type="text" name="nome" required>
+                        
+                        <label class="label_login" for="senha">Senha</label>
+                        <input class="input_login" type="password" name="password" minlength="8" required />
+                    </div>
+                    <input class="botao_enviar" type="submit">
+                </form>
+                <!-- <i class="bi bi-eye-fill" id="btn-senha" onclick="mostrarSenha()"></i> -->
+                <p class="texto_semCadastro">
+                    Não tem cadastro?<a class="cadastro" href="inscricao.html">Cadastre-se aqui</a>
+                </p>
+            </div>
+            <button class="botaoModoEscuro">Modo Escuro</button>
+        <!-- </section> -->
+    </main>
+    <footer class="rodape">
+       <h4>Governo do Maranhão</h4>
+        <img class="maranhao" src="./assets/maranhao.png" alt="Maranhão">
+    </footer>
+</body>
+</html>
